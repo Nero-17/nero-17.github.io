@@ -14,3 +14,6 @@
 .columns-3{grid-template-columns:var(--columns,repeat(3,minmax(0,1fr)))}
 .column img{max-width:min(100%,var(--image-width,100%));object-fit:contain}
 @media(max-width:800px){.content{grid-template-columns:1fr}}
+
+/* Google Sites uses a 1280px row, 48px outer gutters and 2.5% column gutters. */
+@media(min-width:801px){main{max-width:none}.content{max-width:1280px;padding:24px 48px;container-type:inline-size}.column{padding:0 1.25cqw}}
